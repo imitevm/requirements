@@ -45,8 +45,7 @@ Requirements = collections.namedtuple('Requirements', ['reqs'])
 
 
 url_re = re.compile(
-    '^(?P<url>\s*(?:-e\s)?\s*(?:(?:git+)?https|http|file)://[^#]*)'
-    '#egg=(?P<name>[-\.\w]+)')
+    '^(?P<url>\s*(?:-e\s)?\s*(?:git\+)?(?:https|http|file)://[^#]*)#egg=(?P<name>[-\.\w]+)')
 
 
 def canonical_name(req_name):
